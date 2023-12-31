@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE9AB50C-62F3-408C-AEDE-A2DD78D64DCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{F7242C7E-3870-4708-8C66-258D471767A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogHub.API.Bootstrapper", "src\Bootstrapper\DogHub.API.Bootstrapper\DogHub.API.Bootstrapper.csproj", "{F7A13A31-8E82-4E37-A183-0C4FB161CAD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{F10C734E-DCF7-4E4D-854B-05435CB6BBEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.API", "src\Modules\Account.API\Account.API.csproj", "{FD33D52C-B7C1-428D-B86E-FE15F54846B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Core", "src\Modules\Account.Core\Account.Core.csproj", "{94FC57A2-3CEB-4248-9454-530C8D257100}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B0A929B0-5AFB-4227-8FAE-025754FBBE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Abstractions", "src\Shared\Shared.Abstractions\Shared.Abstractions.csproj", "{EF772525-BCF0-46EC-8EC8-D51E24F72D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Infrastructure", "src\Shared\Shared.Infrastructure\Shared.Infrastructure.csproj", "{45173992-EFDC-4FAF-AFFB-09F714509F35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7A13A31-8E82-4E37-A183-0C4FB161CAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A13A31-8E82-4E37-A183-0C4FB161CAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A13A31-8E82-4E37-A183-0C4FB161CAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A13A31-8E82-4E37-A183-0C4FB161CAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD33D52C-B7C1-428D-B86E-FE15F54846B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD33D52C-B7C1-428D-B86E-FE15F54846B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD33D52C-B7C1-428D-B86E-FE15F54846B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD33D52C-B7C1-428D-B86E-FE15F54846B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FC57A2-3CEB-4248-9454-530C8D257100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FC57A2-3CEB-4248-9454-530C8D257100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FC57A2-3CEB-4248-9454-530C8D257100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FC57A2-3CEB-4248-9454-530C8D257100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF772525-BCF0-46EC-8EC8-D51E24F72D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF772525-BCF0-46EC-8EC8-D51E24F72D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF772525-BCF0-46EC-8EC8-D51E24F72D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF772525-BCF0-46EC-8EC8-D51E24F72D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45173992-EFDC-4FAF-AFFB-09F714509F35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45173992-EFDC-4FAF-AFFB-09F714509F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45173992-EFDC-4FAF-AFFB-09F714509F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45173992-EFDC-4FAF-AFFB-09F714509F35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7242C7E-3870-4708-8C66-258D471767A7} = {AE9AB50C-62F3-408C-AEDE-A2DD78D64DCC}
+		{F7A13A31-8E82-4E37-A183-0C4FB161CAD9} = {F7242C7E-3870-4708-8C66-258D471767A7}
+		{F10C734E-DCF7-4E4D-854B-05435CB6BBEA} = {AE9AB50C-62F3-408C-AEDE-A2DD78D64DCC}
+		{FD33D52C-B7C1-428D-B86E-FE15F54846B0} = {F10C734E-DCF7-4E4D-854B-05435CB6BBEA}
+		{94FC57A2-3CEB-4248-9454-530C8D257100} = {F10C734E-DCF7-4E4D-854B-05435CB6BBEA}
+		{B0A929B0-5AFB-4227-8FAE-025754FBBE59} = {AE9AB50C-62F3-408C-AEDE-A2DD78D64DCC}
+		{EF772525-BCF0-46EC-8EC8-D51E24F72D17} = {B0A929B0-5AFB-4227-8FAE-025754FBBE59}
+		{45173992-EFDC-4FAF-AFFB-09F714509F35} = {B0A929B0-5AFB-4227-8FAE-025754FBBE59}
+	EndGlobalSection
+EndGlobal

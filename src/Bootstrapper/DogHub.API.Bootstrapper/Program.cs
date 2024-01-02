@@ -1,7 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddControllers();
+builder.Services.AddInfrastructureConfiguration();
+builder.Services.AddModules();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -17,15 +18,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.MapControllers();
+app.UseInfrastructureConfiguration();
 
-app.MapGet("/", () =>
-{
-    return "DogHub.API";
-})
-.WithName("GetHealth")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run();
 

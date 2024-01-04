@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Abstractions;
 
 // [assembly: InternalsVisibleTo("Shared.Abstractions")]
 [assembly: InternalsVisibleTo("DogHub.API.Bootstrapper")]
@@ -9,7 +10,8 @@ internal static class Extensions
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
-        // services.AddControllers();
+
+        services.AddSingleton<ITimeService, TimeService>();
 
         return services;
     }

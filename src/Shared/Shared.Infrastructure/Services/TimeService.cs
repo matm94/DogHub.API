@@ -1,6 +1,4 @@
-﻿using Shared.Abstractions;
-
-namespace Shared.Infrastructure;
+﻿namespace Shared.Infrastructure;
 
 internal class TimeService : ITimeService
 {

@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+using Account.Core;
 
 namespace Account.API.Controllers;
 
@@ -8,5 +8,5 @@ namespace Account.API.Controllers;
 internal class AccountController : ControllerBase
 {
     [HttpGet]
-    public ActionResult<string> Get() => "Account.API";
+    public ActionResult<string> Get() => throw new UserNotFoundException(Guid.NewGuid());
 }
